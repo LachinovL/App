@@ -1,0 +1,218 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<title>Научный старт</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="inner-header">
+			<a class="logo" href="#">
+				<img class="logo__img" src="{% static 'img/logo.png' %}" alt="Логотип">
+				<p><span>журнал</span><br>НАУЧНЫЙ СТАРТ:<br>"ЦИФРОВАЯ ТРАНСФОРМАЦИЯ"</p>
+			</a>
+			<div class="search">
+				<input type="text" class="search__input">
+				<button class="search__btn">
+					<img src="{% static 'img/search.png' %}" alt="Искать">
+				</button>
+			</div>
+			<div class="burger">
+				<span></span>
+			</div>
+		</div>
+		<nav class="menu">
+			<div class="search">
+				<input type="text" class="search__input">
+				<button class="search__btn">
+					<img src="{% static 'img/search.png' %}" alt="Искать">
+				</button>
+			</div>
+			<ul class="menu__list">
+				<li class="menu__item"><a href="#">ГЛАВНАЯ</a></li>
+				<li class="menu__item menu__item_hover">ЖУРНАЛ
+					<img src="{% static 'img/arrow.png' %}" alt="Список">
+					<div class="wrap-sub-menu__list">
+						<ul class="sub-menu__list">
+							<li><a href="#">РУКОВОДСТВО ЖУРНАЛА</a></li>
+							<li><a href="#">РЕДАКЦИОННЫЙ СОВЕТ ЖУРНАЛА</a></li>
+							<li><a href="#">РЕДАКЦИОННАЯ КОЛЛЕГИЯ ЖУРНАЛА</a></li>
+							<li><a href="#">АВТОРАМ</a></li>
+							<li><a href="#">АРХИВ</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu__item menu__item_hover">ЭКСПЕРТЫ В IT И "ЦИФРОВАЯ ИНФОРМАЦИЯ"
+					<img src="{% static 'img/arrow.png' %}" alt="Список">
+
+				</li>
+				<li class="menu__item"><a href="#">ПРОФОРИЕНТАЦИОННЫЙ ТЕСТ</a></li>
+				<li class="menu__item"><a href="#">НОВОСТИ</a></li>
+				<li class="menu__item"><a href="#">КОНТАКТЫ</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="content">
+		<div class="start-img">
+			<img src="{% static 'img/2.jpeg' %}" alt="">
+		</div>
+		<section class="wrap-event">
+			<div class="wrap-event__img">
+				<img src="{% static 'img/sobranie.png' %}" alt="Участники">
+			</div>
+			<div class="main-event">
+				<h1 class="main-event__title">I Всероссийский конкурс научных и научно-методических работ IT проектов «Цифровая
+					трансформация»</h1>
+				<p class="main-event__text">Приглашаем Вас 29 февраля 2020 года принять участие в
+					I Всероссийском конкурсе научных и научно-методических работ IT проектов «Цифровая трансформация». Конкурс
+					научных и научно-методических работ IT проектов «Цифровая трансформация» организован Московским
+					Политехническим Университетом и проводится при информационной поддержке научно-методического журнала</p>
+				<a class="detail" href="#">Подробнее</a>
+			</div>
+		</section>
+
+		<section class="schedule">
+			<h2 class="title">Мероприятия</h2>
+			<div class="calendar"></div>
+			<div class="inner-schedule">
+				<div class="event">
+					<p class="event__description">I </p>
+					<p class="event__time">12:00</p>
+					<a class="event__detail" href="#">Подробнее</a>
+				</div>
+				<div class="event">
+					<p class="event__description">I Всероссийский конкурс научных и научно-методических работ IT проектов
+						«Цифровая трансформация» I Всероссийский конкурс научных и научно-методических работ IT проектов
+						«Цифровая трансформация» I Всероссийский конкурс научных и научно-методических работ IT проектов
+						«Цифровая трансформация» I Всероссийский конкурс научных и научно-методических работ IT проектов
+						«Цифровая трансформация» I Всероссийский конкурс научных и научно-методических работ IT проектов
+						«Цифровая трансформация» I Всероссийский конкурс научных и научно-методических работ IT проектов
+						«Цифровая трансформация»</p>
+					<p class="event__time">2:0</p>
+					<a class="event__detail" href="#">Подробнее</a>
+				</div>
+				<div class="event">
+					<p class="event__description">I Всероссийский конкурс научных и научно-методических работ IT проектов
+						«Цифровая трансформация»</p>
+					<p class="event__time">12:00</p>
+					<a class="event__detail" href="#">Подробнее</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="news">
+			<h2 class="title">Новости</h2>
+			<div class="news-box">
+				<div class="inner-news">
+					<div class="news__img">
+						<img src="{% static 'img/sobranie.png' %}" alt="">
+					</div>
+					<div class="news-text">
+						<h3 class="news-text__title">Международная научно-практическая конференция «Теоретические и прагматические
+							аспекты становления человека
+							в образовательном пространстве» </h3>
+						<p class="news-text__description">Институт социально-гуманитарных технологий Московского государственного
+							университета технологий и
+							управления им. К. Г. Разумовского (ПКУ) пригласил к участию в Международной научно-практической
+							конференции
+							«Теоретические и прагматические аспекты становления человека в образовательном пространстве». Которая
+							прошла
+							с 5 по 6 декабря 2019 г.</p>
+						<div class="news__detail">
+							<span>Дата публикации: 23 февраля</span>
+							<a class="detail" href="#">Подробнее</a></div>
+					</div>
+				</div>
+				<div class="inner-news">
+					<div class="news__img">
+						<img src="{% static 'img/sobrani2.png' %}" alt="">
+					</div>
+					<div class="news-text">
+						<h3 class="news-text__title">Международная научно-практическая конференция «Теоретические и прагматические
+							аспекты становления человека
+							в образовательном пространстве» </h3>
+						<p class="news-text__description">Институт социально-гуманитарных технологий Московского государственного
+							университета технологий и
+							управления им. К. Г. Разумовского (ПКУ) пригласил к участию в Международной научно-практической
+							конференции
+							«Теоретические и прагматические аспекты становления человека в образовательном пространстве». Которая
+							прошла
+							с 5 по 6 декабря 2019 г.</p>
+						<div class="news__detail">
+							<span>Дата публикации: 23 февраля</span>
+							<a class="detail" href="#">Подробнее</a></div>
+					</div>
+				</div>
+			</div>
+			<span class="news__more">ПОКАЗАТЬ ВСЁ</span>
+		</section>
+
+		<section class="resources">
+			<h2 class="title">Дополнительные ресурсы</h2>
+			<div class="resources__row">
+				<div class="resources-item">
+					<img class="resources-item__icon" src="{% static 'img/issn.png' %}" alt="ISSN">
+					<h3 class="resources-item__title">ISSN</h3>
+					<p class="resources-item__description">Журналу «Теория и практика проектного образования» присвоен
+						Международный стандартный номер периодических изданий (International Standard Serial Number): 2587-5922.</p>
+				</div>
+				<div class="resources-item">
+					<img class="resources-item__icon" src="{% static 'img/e-library.png' %}" alt="E-library">
+					<h3 class="resources-item__title">E-library</h3>
+					<p class="resources-item__description">Журнал «Теория и практика проектного образования» размещается и
+						индексируется на портале elibrary.ru, и входит в РИНЦ.</p>
+				</div>
+				<div class="resources-item">
+					<img class="resources-item__icon" src="{% static 'img/google_scholar.png' %}" alt="Google Scholar">
+					<h3 class="resources-item__title">Google Scholar</h3>
+					<p class="resources-item__description">Журнал «Теория и практика проектного образования» размещается в системе
+						Google Scholar.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="inner-footer">
+			<a class="logo" href="#">
+				<img class="logo__img" src="{% static 'img/logo.png' %}" alt="Логотип">
+				<p><span>журнал</span><br>ТЕОРИЯ И ПРАКТИКА<br>ПРОЕКТНОГО ОБРАЗОВАНИЯ</p>
+			</a>
+		</div>
+		<nav class="footer-menu">
+			<ul class="footer-menu__list">
+				<li class="footer-menu__item"><a href="#">ГЛАВНАЯ</a></li>
+				<li class="footer-menu__item footer-menu__item_hover">
+					<span>ЖУРНАЛ</span>
+					<img src="{% static 'img/arrow.png' %}" alt="Список">
+					<ul class="sub-footer-menu__list">
+						<li><a href="#">РУКОВОДСТВО ЖУРНАЛА</a></li>
+						<li><a href="#">РЕДАКЦИОННЫЙ СОВЕТ ЖУРНАЛА</a></li>
+						<li><a href="#">РЕДАКЦИОННАЯ КОЛЛЕГИЯ ЖУРНАЛА</a></li>
+						<li><a href="#">АВТОРАМ</a></li>
+						<li><a href="#">АРХИВ</a></li>
+					</ul>
+				</li>
+				<li class="footer-menu__item footer-menu__item_hover">
+					<span>ЭКСПЕРТЫ В IT И "ЦИФРОВАЯ ИНФОРМАЦИЯ"</span>
+					<img src="{% static 'img/arrow.png' %}" alt="Список">
+				</li>
+				<li class="footer-menu__item"><a href="#">ПРОФОРИЕНТАЦИОННЫЙ ТЕСТ</a></li>
+				<li class="footer-menu__item"><a href="#">НОВОСТИ</a></li>
+				<li class="footer-menu__item"><a href="#">КОНТАКТЫ</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+	<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
