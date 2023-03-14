@@ -1,0 +1,171 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<title>Научный старт</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="inner-header">
+			<a class="logo" href="#">
+				<img class="logo__img" src="img/logo.png" alt="Логотип">
+				<p><span>журнал</span><br>НАУЧНЫЙ СТАРТ:<br>"ЦИФРОВАЯ ТРАНСФОРМАЦИЯ"</p>
+			</a>
+			<div class="search">
+				<input type="text" class="search__input">
+				<button class="search__btn">
+					<img src="img/search.png" alt="Искать">
+				</button>
+			</div>
+			<div class="burger">
+				<span></span>
+			</div>
+		</div>
+		<nav class="menu">
+			<div class="search">
+				<input type="text" class="search__input">
+				<button class="search__btn">
+					<img src="img/search.png" alt="Искать">
+				</button>
+			</div>
+			<ul class="menu__list">
+				<li class="menu__item"><a href="#">ГЛАВНАЯ</a></li>
+				<li class="menu__item menu__item_hover">ЖУРНАЛ
+					<img src="img/arrow.png" alt="Список">
+					<div class="wrap-sub-menu__list">
+						<ul class="sub-menu__list">
+							<li><a href="#">РУКОВОДСТВО ЖУРНАЛА</a></li>
+							<li><a href="#">РЕДАКЦИОННЫЙ СОВЕТ ЖУРНАЛА</a></li>
+							<li><a href="#">РЕДАКЦИОННАЯ КОЛЛЕГИЯ ЖУРНАЛА</a></li>
+							<li><a href="#">АВТОРАМ</a></li>
+							<li><a href="#">АРХИВ</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu__item menu__item_hover">ЭКСПЕРТЫ В IT И "ЦИФРОВАЯ ИНФОРМАЦИЯ"
+					<img src="img/arrow.png" alt="Список">
+
+				</li>
+				<li class="menu__item"><a href="#">ПРОФОРИЕНТАЦИОННЫЙ ТЕСТ</a></li>
+				<li class="menu__item"><a href="#">НОВОСТИ</a></li>
+				<li class="menu__item"><a href="#">КОНТАКТЫ</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="news-page">
+		<h1 class="news-page__title">НОВОСТИ</h1>
+		<div class="news-page__item">
+			<div class="news-page__img">
+				<img src="img/sobranie.png" alt="">
+			</div>
+			<h2 class="news-page__description">Международная научно-практическая конференция «Теоретические и прагматические
+				аспекты становления человека в
+				образовательном пространстве» </h2>
+			<span class="news-page__date">Дата публикации: 23 февраля</span>
+			<a class="detail" href="#">Подробнее</a>
+		</div>
+		<div class="news-page__item">
+			<div class="news-page__img">
+				<img src="img/sobrani2.png" alt="">
+			</div>
+			<h2 class="news-page__description">Международная научно-практическая конференция «Теоретические и прагматические
+				аспекты становления человека в
+				образовательном пространстве» </h2>
+			<span class="news-page__date">Дата публикации: 23 февраля</span>
+			<a class="detail" href="#">Подробнее</a>
+		</div>
+		<div class="news-page__item">
+			<div class="news-page__img">
+				<img src="img/sobrani2.png" alt="">
+			</div>
+			<h2 class="news-page__description">Международная научно-практическая конференция «Теоретические и прагматические
+				аспекты становления человека в
+				образовательном пространстве» </h2>
+			<span class="news-page__date">Дата публикации: 23 февраля</span>
+			<a class="detail" href="#">Подробнее</a>
+		</div>
+		<div class="news-page__item">
+			<div class="news-page__img">
+				<img src="img/sobrani2.png" alt="">
+			</div>
+			<h2 class="news-page__description">Международная научно-практическая конференция «Теоретические и прагматические
+				аспекты становления человека в
+				образовательном пространстве» </h2>
+			<span class="news-page__date">Дата публикации: 23 февраля</span>
+			<a class="detail" href="#">Подробнее</a>
+		</div>
+		<div class="news-page__item">
+			<div class="news-page__img">
+				<img src="img/sobrani2.png" alt="">
+			</div>
+			<h2 class="news-page__description">Международная научно-практическая конференция «Теоретические и прагматические
+				аспекты становления человека в
+				образовательном пространстве» </h2>
+			<span class="news-page__date">Дата публикации: 23 февраля</span>
+			<a class="detail" href="#">Подробнее</a>
+		</div>
+		<div class="news-page__item">
+			<div class="news-page__img">
+				<img src="img/sobrani2.png" alt="">
+			</div>
+			<h2 class="news-page__description">Международная научно-практическая конференция «Теоретические и прагматические
+				аспекты становления человека в
+				образовательном пространстве» </h2>
+			<span class="news-page__date">Дата публикации: 23 февраля</span>
+			<a class="detail" href="#">Подробнее</a>
+		</div>
+
+		<ul class="pagination">
+			<li class="pagination__back"><img src="img/left-arrow.png" alt=""></li>
+			<li class="pagination__num pagination__num_selected"><a href="#">1</a></li>
+			<li class="pagination__num"><a href="#">2</a></li>
+			<li class="pagination__num"><a href="#">3</a></li>
+			<li class="pagination__dots">...</li>
+			<li class="pagination__num"><a href="#">9</a></li>
+			<li class="pagination__next"><img src="img/right-arrow.png" alt=""></li>
+		</ul>
+	</main>
+
+	<footer class="footer">
+		<div class="inner-footer">
+			<a class="logo" href="#">
+				<img class="logo__img" src="img/logo.png" alt="Логотип">
+				<p><span>журнал</span><br>ТЕОРИЯ И ПРАКТИКА<br>ПРОЕКТНОГО ОБРАЗОВАНИЯ</p>
+			</a>
+		</div>
+		<nav class="footer-menu">
+			<ul class="footer-menu__list">
+				<li class="footer-menu__item"><a href="#">ГЛАВНАЯ</a></li>
+				<li class="footer-menu__item footer-menu__item_hover">
+					<span>ЖУРНАЛ</span>
+					<img src="img/arrow.png" alt="Список">
+					<ul class="sub-footer-menu__list">
+						<li><a href="#">РУКОВОДСТВО ЖУРНАЛА</a></li>
+						<li><a href="#">РЕДАКЦИОННЫЙ СОВЕТ ЖУРНАЛА</a></li>
+						<li><a href="#">РЕДАКЦИОННАЯ КОЛЛЕГИЯ ЖУРНАЛА</a></li>
+						<li><a href="#">АВТОРАМ</a></li>
+						<li><a href="#">АРХИВ</a></li>
+					</ul>
+				</li>
+				<li class="footer-menu__item footer-menu__item_hover">
+					<span>ЭКСПЕРТЫ В IT И "ЦИФРОВАЯ ИНФОРМАЦИЯ"</span>
+					<img src="img/arrow.png" alt="Список">
+				</li>
+				<li class="footer-menu__item"><a href="#">ПРОФОРИЕНТАЦИОННЫЙ ТЕСТ</a></li>
+				<li class="footer-menu__item"><a href="#">НОВОСТИ</a></li>
+				<li class="footer-menu__item"><a href="#">КОНТАКТЫ</a></li>
+			</ul>
+		</nav>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

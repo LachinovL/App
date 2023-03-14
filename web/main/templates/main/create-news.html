@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="forms.css">
+	<title>Научный старт</title>
+</head>
+
+<body>
+	<main class="table-content">
+		<h1 class="table-header">Таблица Новости</h1>
+		<a class="table-create" href="#">Создать новость</a>
+		<div class="table-wrap">
+			<table class="table" cellspacing="0">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Заголовок</th>
+						<th>Краткое описание</th>
+						<th>Текст Новости</th>
+						<th>Фото</th>
+						<th>Действие</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-label="#">1</td>
+						<td data-label="Заголовок">Конференция от МГУ</td>
+						<td data-label="Краткое описание">Ля</td>
+						<td data-label="Текст Новости">Жу</td>
+						<td data-label="Фото">1.jpg</td>
+						<td data-label="Действие">
+							<div class="table__edit">
+								<a href="#">
+									<img src="img/edit.png" alt="изменить">
+								</a>
+								<a href="#">
+									<img src="img/delete.png" alt="Удалить">
+								</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td data-label="#">1</td>
+						<td data-label="Заголовок">Конференция от МГУ</td>
+						<td data-label="Краткое описание">Ля</td>
+						<td data-label="Текст Новости">Жу</td>
+						<td data-label="Фото">1.jpg</td>
+						<td data-label="Действие">
+							<div class="table__edit">
+								<a href="#">
+									<img src="img/edit.png" alt="изменить">
+								</a>
+								<a href="#">
+									<img src="img/delete.png" alt="Удалить">
+								</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td data-label="#">1</td>
+						<td data-label="Заголовок">Конференция от МГУ</td>
+						<td data-label="Краткое описание">Ля</td>
+						<td data-label="Текст Новости">Жу</td>
+						<td data-label="Фото">1.jpg</td>
+						<td data-label="Действие">
+							<div class="table__edit">
+								<a href="#">
+									<img src="img/edit.png" alt="изменить">
+								</a>
+								<a href="#">
+									<img src="img/delete.png" alt="Удалить">
+								</a>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<ul class="pagination">
+			<li class="pagination__back"><img src="img/left-arrow.png" alt=""></li>
+			<li class="pagination__num pagination__num_selected"><a href="#">1</a></li>
+			<li class="pagination__num"><a href="#">2</a></li>
+			<li class="pagination__num"><a href="#">3</a></li>
+			<li class="pagination__dots">...</li>
+			<li class="pagination__num"><a href="#">9</a></li>
+			<li class="pagination__next"><img src="img/right-arrow.png" alt=""></li>
+		</ul>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
